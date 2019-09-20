@@ -2,7 +2,7 @@
 The code is comprise with a back end written in Python using Flask framework and postgresql  and a frontend written in php symphony framework
 #Backend
 
- #Pre-requisites
+ # Pre-requisites
   Make sure you have the following installed on your system
 
 	- Python3.x  Rest Service Application Languafe
@@ -10,15 +10,15 @@ The code is comprise with a back end written in Python using Flask framework and
 	- Pipenv - we'll use pipenv to create and manage our project virtual environment and to also install and uninstall packages
 	- Linux Os preferable(the code have been tested in linux) 
 
- #Installation
+ # Installation
 	- checkout the project in a directory of your choice
 	- navigate to to the backend folder trough a terminal
 	- type the following command "pipenv install" 
 	- At this stage a assumption is made that your postgres server is already been set and you have the connection string
 	- Setup your environment variable
-		- On Linux Os terminal  type export DATABASE_URL=postrges://yourpostegresusername:password@localhost/yourdatabse
-		- On Linux Os terminal  type export FLASK_ENV=development
-		- On Linux Os terminal  type export JWT_SECRET_KEY=Random string for token generation
+		1. On Linux Os terminal  type export DATABASE_URL=postrges://yourpostegresusername:password@localhost/yourdatabse
+		2. On Linux Os terminal  type export FLASK_ENV=development
+		3. On Linux Os terminal  type export JWT_SECRET_KEY=Random string for token generation
 	- Create your database migration and populate dummy data
 	   Still Inside the backend folder : run the manage script to populate the database:
 		- python manage.py db init : to initiate migration
@@ -27,7 +27,7 @@ The code is comprise with a back end written in Python using Flask framework and
 		- python manage.py seeds : to generate and populate the database
 
 	   this will create a users table  with  2 records   and a nachines table with 1550 records.
-#Run
+# Run
 type python run.py : this will start the serve at port 7700 and you can access the following endpoint
   - GET http://localhost:7700 : Test endpoint to make sure that the system is working
   - GET http://localhost:7700/api/v1/machines   to get the user machines (required authentication) -H Authorization Bearer "access_token" 
