@@ -26,7 +26,7 @@ class UserSeeder():
             machines = MachineModel(
                 {
                     'computer_name': fake.user_name(),
-                    'processors': fake.random.randint(16, 64),
+                    'processors': fake.random.randint(2048, 4096),
                     'memory': fake.random.randint(2048, 4096),
                     'last_login_date': fake.date_between_dates(datetime.date(2019, 1, 1), date.today()),
                     'user_id': user1.id,
@@ -40,7 +40,9 @@ class UserSeeder():
         for _ in range(15000):
             name = names[fake.random.randint(0, 2)]
             machines = MachineModel(
-                {'computer_name': fake.user_name(), 'processors': fake.random.randint(16, 64),
+                {
+                 'computer_name': fake.user_name(),
+                 'processors': fake.random.randint(2048, 4096),
                  'memory': fake.random.randint(2048, 4096),
                  'last_login_date': fake.date_between_dates(datetime.date(2019, 1, 1), date.today()),
                  'user_id': user2.id,

@@ -64,7 +64,7 @@ class MachineSchema(Schema):
     """
     id = fields.Int(dump_only=True)
     computer_name = fields.Str(required=True)
-    processor = fields.Int(required=True)
+    processors = fields.Int(required=True)
     user_id = fields.Int(required=True)
     memory = fields.Int(required=True)
     machine_type = fields.Str(required=True)
