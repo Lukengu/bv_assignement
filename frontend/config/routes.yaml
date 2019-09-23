@@ -1,0 +1,23 @@
+index:
+   path: /
+   controller: App\Controller\DashboardController::index
+auth:
+   path: /auth
+   controller: App\Controller\AuthController::login
+logout:
+   path: /logout
+   controller: App\Controller\AuthController::logout  
+register:
+   path: /register
+   controller: App\Controller\AuthController::register
+line_data:
+   path: /line_data
+   controller: App\Controller\DashboardController::linedata
+
+controllers:
+    resource: '../src/Controller/'
+    type:     annotation
+    
+
+    
+

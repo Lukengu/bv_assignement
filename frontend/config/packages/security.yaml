@@ -1,0 +1,33 @@
+security:
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        in_memory: { memory: null }
+        apiUser:
+           id: App\Security\User\ApiUserProvider
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+            
+        main:
+           anonymous: ~
+           provider: apiUser
+           form_login:  
+              login_path: auth
+              check_path: auth
+              use_forward: true
+           logout:
+               path: /logout
+               target: /
+           guard:
+               authenticators:
+                - App\Security\User\LoginFormAuthenticator
+
+   
+         
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+         - { path: ^/auth, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         - { path: ^/, roles: ROLE_USER }

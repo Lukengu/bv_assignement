@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+
+ {{ form_start(form) }}
+<div class="container">
+  
+     {{ form_row(form.name, {'attr': {'required': 'required'}}) }}
+
+  
+    {{ form_row(form.username, {'attr': {'required': 'required'}}) }}
+    
+  
+ 
+     {{ form_row(form.password.first, {'attr': {'required': 'required'}}) }}
+     
+     
+    
+     {{ form_row(form.password.second, {'attr': {'required': 'required'}}) }}
+    
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}" />
+           
+	
+	
+    <button type="submit">register</button>
+   
+  </div>
+
+ 
+ {{ form_end(form) }}
+{% endblock %}
