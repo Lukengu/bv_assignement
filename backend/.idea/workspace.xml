@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c09cbe47-19da-47f9-bfc0-e3c3ca23d7a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/machine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/machine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeds/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeds/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/css/line_chart.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/css/line_chart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/js/line.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/js/line.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/templates/dashboard/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/templates/dashboard/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +69,7 @@
       <workItem from="1568835187212" duration="16555000" />
       <workItem from="1568910469888" duration="26429000" />
       <workItem from="1568998910014" duration="10617000" />
-      <workItem from="1569187293187" duration="2458000" />
+      <workItem from="1569187293187" duration="3441000" />
     </task>
     <servers />
   </component>

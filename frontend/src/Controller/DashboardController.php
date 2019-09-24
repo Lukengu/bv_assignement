@@ -62,7 +62,7 @@ class DashboardController extends AbstractController
         ]);
         $final  = [];
         foreach ($formatted_line as $child) {
-            $key = $child[0] . $child[1];
+            $key = $child[0] . $child[1].$child[2];
             
             if(!array_key_exists($key, $final)) {
                 // check if we already found objects with the same data, if not then we start with 0 as containercount

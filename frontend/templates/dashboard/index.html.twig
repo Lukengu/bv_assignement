@@ -2,8 +2,21 @@
 
 {% block title %}{% endblock %}
 
-{% block javascripts %}   <script type="text/javascript" src='{{ asset("js/line.js") }}'></script> {% endblock %}
-{% block body %}
-	<div class="chart-wrapper" id="chart_line"></div>
+{% block javascripts %}   
+
+<script type="text/javascript" src='{{ asset("js/line.js") }}'></script> 
+<script>
+
+
+</script>
 
 {% endblock %}
+{% block body %}
+
+<div id="chart">
+  <svg></svg>
+</div>
+
+
+{% endblock %}
+
